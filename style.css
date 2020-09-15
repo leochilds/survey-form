@@ -1,0 +1,9 @@
+form {
+    max-width: 700px;
+    margin: auto;
+    display: block;
+}
+
+button {
+    margin: 1em 0px;
+}
