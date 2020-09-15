@@ -6,31 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Survey Form</title>
+    <link rel="stylesheet" href="./w3.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">This is a short survey form for the Freecodecamp portfolio projects.</p>
-    <form id="survey-form">
-        <label for="name" id="name-label">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter name here" required />
-        <label for="email" id="email-label">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter email here" required />
-        <label for="number" id="number-label">Rating</label>
-        <input min="0" max="9" type="number" id="number" name="number" placeholder="Enter rating from 0-9" />
-        <select id="dropdown">
-            <option>Option 1</option>
-            <option>Option 2</option>
-        </select>
-        <label for="recommend" id="recommend-label">Would you recommend us?</label>
-        <input name="recommend" type="radio" value="yes">
-        <input name="recommend" type="radio" value="no">
-        <label for="contact-hours" id="contact-hours-label">When can we contact you?</label>
-        <input type="checkbox" name="contact-hours" value="morning">
-        <input type="checkbox" name="contact-hours" value="evening">
-        <textarea></textarea>
-        <button id="submit">Submit</button>
-    </form>
+    <section class="w3-container">
+        <h1 class="w3-center" id="title">Survey Form</h1>
+        <p class="w3-center" id="description">This is a short survey form for the Freecodecamp portfolio projects.</p>
+
+        <form class="w3-card-4 w3-light-grey w3-text-blue" id="survey-form">
+            <div class="w3-container w3-margin">
+                <h2>Survey Form</h2>
+                <label for="name" id="name-label">Name</label>
+                <input class="w3-input w3-border w3-round-large" type="text" id="name" name="name"
+                    placeholder="Enter name here" required />
+                <label for="email" id="email-label">Email</label>
+                <input class="w3-input w3-border w3-round-large" type="email" id="email" name="email"
+                    placeholder="Enter email here" required />
+                <label for="number" id="number-label">Rating</label>
+                <input class="w3-input w3-border w3-round-large" min="0" max="9" type="number" id="number" name="number"
+                    placeholder="Enter rating from 0-9" />
+                <label for="location">Location</label>
+                <select name="location" class="w3-select w3-border w3-round-large" id="dropdown">
+                    <option>London</option>
+                    <option>Manchester</option>
+                </select>
+                <div>
+                    <label for="recommend" id="recommend-label">Would you recommend us?</label>
+                    <br>
+                    <input class="w3-radio" name="recommend" type="radio" value="yes">
+                    <label>Yes</label>
+                    <br>
+                    <input class="w3-radio" name="recommend" type="radio" value="no">
+                    <label>No</label>
+                </div>
+                <div>
+                    <label for="contact-hours" id="contact-hours-label">When can we contact you?</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="contact-hours" value="morning">
+                    <label>Morning</label>
+                    <br>
+                    <input class="w3-check" type="checkbox" name="contact-hours" value="evening">
+                    <label>Evening</label>
+                </div>
+                <br>
+                <textarea class="w3-input w3-border w3-round-large"></textarea>
+                <button class="w3-btn w3-green w3-round" id="submit">Submit</button>
+            </div>
+
+        </form>
+
+    </section>
+
     <script src="./tests.js" type="text/javascript"></script>
 </body>
 
